@@ -9,54 +9,54 @@ defmodule WizardTest do
     assert wizard.name == "Eric"
   end
 
-  @tags :skip
+  @tag :skip
   test 'test can have different name' do
     wizard = %Wizard{name: "Alex"}
 
     assert wizard.name == "Alex"
   end
 
-  @tags :skip
+  @tag :skip
   test 'test is bearded by default' do
     wizard = %Wizard{name: "Ben"}
 
     assert wizard.bearded?
   end
 
-  @tags :skip
+  @tag :skip
   test 'test is not always bearded' do
     wizard = %Wizard{name: "Valerie", bearded: false}
 
     refute wizard.bearded?
   end
 
-  @tags :skip
+  @tag :skip
   test 'test has root powers' do
     wizard = %Wizard{name: "Sarah", bearded: false}
 
     assert wizard.incantation("chown ~/bin") == "sudo chown ~/bin"
   end
 
-  @tags :skip
+  @tag :skip
   test 'test has lots of root powers' do
     wizard = %Wizard{name: "Rob", bearded: false}
     
     assert wizard.incantation("rm -rf /home/mirandax") == "sudo rm -rf /home/mirandax"
   end
 
-  @tags :skip
+  @tag :skip
   test 'test starts rested' do
     # create wizard
     # .rested? returns true
   end
 
-  @tags :skip
+  @tag :skip
   test 'test can cast spells' do
     # create wizard
     # .cast returns "MAGIC MISSILE!"
   end
 
-  @tags :skip
+  @tag :skip
   test 'test gets tired after casting three spells' do
     # create wizard
     # casts spell twice
