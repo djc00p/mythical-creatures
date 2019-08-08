@@ -32,7 +32,7 @@ The first line with `**` is the error message.
 
 Create that file in the `lib` directory (`touch lib/unicorn.ex`) and then run
 your test again. Continue to follow the errors that your test provides until the
-test passes. Then, unskip the next test by removing the lines that say `@tags
+test passes. Then, unskip the next test by removing the lines that say `@tag
 :skip` defined in `test/test_helper.exs`. Continue until all tests pass for all creatures.
 
 ## Suggested Order

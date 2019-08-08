@@ -9,7 +9,7 @@ defmodule UnicornTest do
     assert unicorn.name == 'Robert'
   end
 
-  @tags :skip
+  @tag :skip
   test 'it is white by default' do
     unicorn = %Unicorn{name: 'Margaret'}
 
@@ -17,7 +17,7 @@ defmodule UnicornTest do
     assert unicorn.white?
   end
 
-  @tags :skip
+  @tag :skip
   test 'it does not have to be white' do
     unicorn = %Unicorn{name: 'Barbara', color: 'purple'}
 
@@ -25,7 +25,7 @@ defmodule UnicornTest do
     refute unicorn.white?
   end
 
-  @tags :skip
+  @tag :skip
   test 'unicorn says sparkly stuff' do
     unicorn = %Unicorn{name: 'Johnny'}
 

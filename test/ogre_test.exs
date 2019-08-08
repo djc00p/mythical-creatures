@@ -10,21 +10,21 @@ defmodule OgreTest do
     assert ogre.name == 'Urgnot'
   end
 
-  @tags :skip
+  @tag :skip
   test 'it can live somewhere by default' do
     ogre = %Ogre{name: 'Urgnot'}
 
     assert ogre.home == 'Swamp'
   end
 
-  @tags :skip
+  @tag :skip
   test 'it doesnt have to live in a swamp' do
     ogre = %Ogre{name: 'Urgnot', home: 'The Ritz'}
 
     assert ogre.home == 'The Ritz'
   end
 
-  @tags :skip
+  @tag :skip
   test 'it can meet humans' do
     ogre = %Ogre{name: 'Urgnot'}
     human = %Human{}
@@ -34,7 +34,7 @@ defmodule OgreTest do
     assert orge.encounter_counter == 1
   end
 
-  @tags :skip
+  @tag :skip
   test 'humans only notices ogre every third encounter' do
     ogre = %Ogre{name: 'Urgnot'}
     human = %Human{}
@@ -47,7 +47,7 @@ defmodule OgreTest do
     assert human.notices_ogre?
   end
 
-  @tags :skip
+  @tag :skip
   test 'human notices ogre the sixth time' do
     ogre = %Ogre{name: 'Urgnot'}
     human = %Human{}
@@ -57,7 +57,7 @@ defmodule OgreTest do
     assert human.notices_ogre?
   end
 
-  @tags :skip
+  @tag :skip
   test 'it can swing a club' do
     ogre = %Ogre{name: 'Urgnot'}
     human = %Human{}
@@ -66,7 +66,7 @@ defmodule OgreTest do
     assert ogre.swings == 1
   end
 
-  @tags :skip
+  @tag :skip
   test 'it swings the club when the human notices it' do
     ogre = %Ogre{name: 'Urgnot'}
     human = %Human{}
@@ -83,7 +83,7 @@ defmodule OgreTest do
     assert human.notices_ogre?
   end
 
-  @tags :skip
+  @tag :skip
   test 'it hits the human every second time it swings' do
     ogre = %Ogre{name: 'Urgnot'}
     human = %Human{}
@@ -95,7 +95,7 @@ defmodule OgreTest do
     assert human.knocked_out?
   end
 
-  @tags :skip
+  @tag :skip
   test 'human wakes up when ogre apologizes' do
     ogre = %Ogre{name: 'Urgnot'}
     human = %Human{}
